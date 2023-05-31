@@ -1,7 +1,12 @@
+import { Header } from "@/components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Saira } from "next/font/google";
+import { Container } from "@/components/Container";
 
-const inter = Inter({ subsets: ["latin"] });
+const saira = Saira({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Capputeno",
@@ -15,7 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={saira.className}>
+        <Container>
+          <Header />
+
+          {children}
+        </Container>
+      </body>
     </html>
   );
 }

@@ -1,3 +1,6 @@
+:root {
+  --logo-color: #5d5d6d;
+}
 * {
   box-sizing: border-box;
   padding: 0;
