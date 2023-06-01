@@ -8,6 +8,7 @@ interface ContainerProps {
 const ContainerWrapper = styled.section`
   max-width: 1280px;
   margin: 0 auto;
+  padding: 20px 0;
 `;
 
 export function Container(props: ContainerProps) {

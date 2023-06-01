@@ -3,6 +3,8 @@
 import styled from "styled-components";
 
 import { Saira_Stencil_One } from "next/font/google";
+import { PrimaryInput } from "./PrimaryInput";
+import { CartControl } from "./CartControl";
 
 const sairaStencil = Saira_Stencil_One({
   weight: ["400"],
@@ -15,6 +17,13 @@ const TagHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 `;
 
 const Logo = styled.a`
@@ -27,7 +36,10 @@ export function Header(props: HeaderProps) {
   return (
     <TagHeader>
       <Logo className={sairaStencil.className}>Capputeeno</Logo>
-      <div>search</div>
+      <div>
+        <PrimaryInput placeholder="Procurando por algo específico?" />
+        <CartControl />
+      </div>
     </TagHeader>
   );
 }
