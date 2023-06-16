@@ -1,3 +1,4 @@
+"use-client";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { CartIcon } from "./icons/cart-icon";
 import styled from "styled-components";
@@ -7,7 +8,7 @@ const CartCount = styled.span`
   bottom: 0;
   right: -10px;
   width: 17px;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0.5px 5px;
   background-color: var(--red-color);
   color: white;
