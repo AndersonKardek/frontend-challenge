@@ -17,6 +17,7 @@ interface HeaderProps {}
 
 const TagHeader = styled.header`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
@@ -26,11 +27,18 @@ const TagHeader = styled.header`
     align-items: center;
     gap: 24px;
   }
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 const Logo = styled.a`
   color: var(--logo-color);
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 150%;
 `;
 

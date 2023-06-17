@@ -1,26 +1,32 @@
 "use cliente";
 
-import { InputHTMLAttributes, ReactNode } from "react";
+import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 import { SearchIcon } from "./icons/search-icon";
 
 const PrimaryInputStyle = styled.input`
-  width: 352px;
+  width: 100%;
   padding: 10px 16px;
 
   background: var(--bg-secundary);
   border: none;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 
   color: var(--text-dark);
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
 `;
 
 const InputContainer = styled.div`
   position: relative;
+  width: 28.2rem;
 
   svg {
     position: absolute;
@@ -28,6 +34,10 @@ const InputContainer = styled.div`
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+  }
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    width: 35.2rem;
   }
 `;
 
