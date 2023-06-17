@@ -22,13 +22,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={saira.className}>
-        <Container>
-          <FilterContextProvider>
-            <Header />
+        <FilterContextProvider>
+          <Header />
 
-            {children}
-          </FilterContextProvider>
-        </Container>
+          {children}
+        </FilterContextProvider>
       </body>
     </html>
   );
