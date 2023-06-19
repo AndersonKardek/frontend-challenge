@@ -3,7 +3,7 @@ import { FilterBar } from "@/components/FilterBar";
 import { ProductsList } from "@/components/ProductsList";
 import { QueryClient } from "@tanstack/react-query";
 
-import { Container } from "@/components/Container";
+import { Container } from "@/components/DefaultContainer";
 import styled from "styled-components";
 
 const PageWrapper = styled.main`

@@ -11,6 +11,6 @@ const ContainerWrapper = styled.section`
   padding: 20px 20px;
 `;
 
-export function Container(props: ContainerProps) {
+export function DefaultContainer(props: ContainerProps) {
   return <ContainerWrapper>{props.children}</ContainerWrapper>;
 }
