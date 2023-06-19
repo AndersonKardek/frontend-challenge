@@ -5,8 +5,9 @@ import styled from "styled-components";
 import { Saira_Stencil_One } from "next/font/google";
 import { PrimaryInput } from "./PrimaryInput";
 import { CartControl } from "./CartControl";
-import { Container } from "./Container";
+
 import { useFilter } from "@/hooks/useFilter";
+import { DefaultContainer } from "./DefaultContainer";
 
 const sairaStencil = Saira_Stencil_One({
   weight: ["400"],
@@ -45,7 +46,7 @@ const Logo = styled.a`
 export function Header(props: HeaderProps) {
   const { search, setSearch } = useFilter();
   return (
-    <Container>
+    <DefaultContainer>
       <TagHeader>
         <Logo className={sairaStencil.className}>Capputeeno</Logo>
         <div>
@@ -57,6 +58,6 @@ export function Header(props: HeaderProps) {
           <CartControl />
         </div>
       </TagHeader>
-    </Container>
+    </DefaultContainer>
   );
 }

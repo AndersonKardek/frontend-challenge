@@ -3,7 +3,7 @@ import { FilterBar } from "@/components/FilterBar";
 import { ProductsList } from "@/components/ProductsList";
 import { QueryClient } from "@tanstack/react-query";
 
-import { Container } from "@/components/DefaultContainer";
+import { DefaultContainer } from "@/components/DefaultContainer";
 import styled from "styled-components";
 
 const PageWrapper = styled.main`
@@ -15,10 +15,10 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <Container>
+      <DefaultContainer>
         <FilterBar />
         <ProductsList />
-      </Container>
+      </DefaultContainer>
     </PageWrapper>
   );
 }

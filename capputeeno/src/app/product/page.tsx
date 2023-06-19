@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import { useProduct } from "@/hooks/useProduct";
 import { DefaultContainer } from "@/components/DefaultContainer";
